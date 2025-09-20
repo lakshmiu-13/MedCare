@@ -1,0 +1,131 @@
+/* MedicinePage.css */
+.mp-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f6fbff 0%, #ffffff 100%);
+  padding: 40px 20px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.mp-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(28, 47, 76, 0.08);
+  color: #1f2d3d;
+}
+
+.mp-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.mp-left { flex: 1; }
+.mp-title {
+  font-size: 28px;
+  margin: 0;
+  color: #0f1724;
+}
+.mp-sub {
+  margin: 6px 0 0;
+  color: #475569;
+  font-size: 14px;
+}
+.mp-tags { margin-top: 10px; display:flex; gap:8px; flex-wrap:wrap; }
+.tag {
+  background: #eef2ff;
+  padding: 6px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #3730a3;
+}
+
+.mp-image img {
+  width: 140px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fafafa;
+  border: 1px solid #eef2ff;
+}
+
+.mp-warning {
+  margin-top: 16px;
+  background: #fff7ed;
+  border-left: 4px solid #f59e0b;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #92400e;
+  font-size: 14px;
+}
+
+.mp-section { margin-top: 18px; }
+.mp-acc {
+  width: 100%;
+  text-align: left;
+  background: #f8fafc;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #0f1724;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mp-body {
+  margin-top: 8px;
+  padding: 12px 14px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #f1f5f9;
+  color: #334155;
+}
+.mp-body ul { padding-left: 16px; margin: 0; }
+.mp-body li { margin: 6px 0; }
+
+.alt-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.alt-card {
+  background: #f8fafc;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 120px;
+  text-align: center;
+  border: 1px solid #eef2ff;
+}
+.alt-card:hover { transform: translateY(-4px); transition: 0.15s; box-shadow: 0 8px 20px rgba(2,6,23,0.06); }
+
+.mp-actions { margin-top: 20px; display:flex; gap:12px; }
+.btn-primary {
+  background: #0ea5a4;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-secondary {
+  background: transparent;
+  color: #0f1724;
+  border: 1px solid #e6eef1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.mp-error {
+  background: #fff1f2;
+  color: #9f1239;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+}

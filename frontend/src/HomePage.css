@@ -1,0 +1,194 @@
+/* Background setup */
+.homepage {
+  min-height: 100vh;
+  width: 100%;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("https://plus.unsplash.com/premium_photo-1668487827029-2bd54133c303?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1lZGljYWwlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #19183B;
+  padding: 15px 30px;
+}
+.logo{
+    font-size:38px;
+    font-family:'Montserrat',sans-serif;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+
+}
+
+.navbar li {
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size:22px;
+}
+
+.navbar li:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+}
+
+.welcome-text {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: slideIn 1.5s ease-out;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-style: italic;
+  color: #ffcc00;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Form */
+.form-container {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.form-container label {
+  font-size: 1.2rem;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+}
+
+.form-container button {
+  background: #a3bcf3;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.form-container button:hover {
+  background: #1d4ed8;
+}
+
+/* Scroll Down Arrow */
+.scroll-down {
+  font-size: 2rem;
+  margin-top: 20px;
+  animation: bounce 1.5s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+/* Why Choose Us */
+.why-us {
+  /*background: white;*/
+  color: black;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background: #eef3fc;
+  color: rgb(27, 26, 26);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer .socials {
+  margin-top: 10px;
+}
+
+.footer .socials a {
+  margin: 0 10px;
+  color: rgb(2, 2, 2);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer .socials a:hover {
+  color: #ffcc00;
+}
